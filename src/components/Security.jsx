@@ -1,0 +1,98 @@
+import { Shield, Lock, Server, CheckCircle2 } from 'lucide-react'
+
+const Security = () => {
+  const features = [
+    {
+      icon: Lock,
+      title: 'Chiffrement de bout en bout',
+      description: 'Toutes vos données sont chiffrées avec AES-256, le standard de l\'industrie. Les transmissions utilisent TLS 1.3 pour garantir une sécurité maximale.',
+      technical: 'AES-256, TLS 1.3'
+    },
+    {
+      icon: Shield,
+      title: 'Données jamais utilisées pour l\'entraînement',
+      description: 'Vos documents et analyses restent strictement privés. Nous n\'utilisons jamais vos données pour entraîner nos modèles. Garantie contractuelle.',
+      technical: 'Zero training data policy'
+    },
+    {
+      icon: Server,
+      title: 'Hébergement souverain en France',
+      description: 'Toutes nos infrastructures sont hébergées en France, garantissant la souveraineté des données et la conformité avec le RGPD et les exigences des cabinets d\'avocats.',
+      technical: 'RGPD compliant, ISO 27001'
+    }
+  ]
+
+  return (
+    <section id="securite" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="space-y-16">
+        {/* Section Header */}
+        <div className="text-center space-y-4 max-w-3xl mx-auto">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/20 rounded-full mb-4">
+            <Shield className="w-8 h-8 text-gold" />
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue">
+            Sécurité de <span className="text-gold">classe entreprise</span>
+          </h2>
+          <p className="text-xl text-navy-blue opacity-90">
+            Nous prenons la sécurité de vos données au sérieux, avec des standards bancaires
+          </p>
+        </div>
+
+        {/* Security Features Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={index}
+                className="group relative bg-white border-2 border-gold/20 rounded-lg p-8 hover:border-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold/10"
+              >
+                {/* Content */}
+                <div className="space-y-6">
+                  <div className="flex items-start justify-between">
+                    <div className="w-14 h-14 bg-gold/20 rounded-lg flex items-center justify-center group-hover:bg-gold/30 transition-colors">
+                      <Icon className="w-7 h-7 text-gold" />
+                    </div>
+                    <CheckCircle2 className="w-6 h-6 text-turquoise opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-bold text-navy-blue group-hover:text-gold transition-colors">
+                      {feature.title}
+                    </h3>
+                    <p className="text-navy-blue leading-relaxed opacity-90">
+                      {feature.description}
+                    </p>
+                    <div className="pt-2">
+                      <span className="inline-block px-3 py-1 bg-turquoise/10 text-turquoise text-xs font-mono rounded-md border border-turquoise/20">
+                        {feature.technical}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Additional Security Badges */}
+        <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
+          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
+            <span className="text-sm text-navy-blue font-medium">RGPD</span>
+          </div>
+          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
+            <span className="text-sm text-navy-blue font-medium">ISO 27001</span>
+          </div>
+          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
+            <span className="text-sm text-navy-blue font-medium">HDS Certified</span>
+          </div>
+          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
+            <span className="text-sm text-navy-blue font-medium">SOC 2 Type II</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Security

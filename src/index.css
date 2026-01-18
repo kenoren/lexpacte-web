@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white antialiased;
+    color: #1e3a5f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+}
+
+.text-navy-blue {
+  color: #1e3a5f;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .hover\:shadow-gold\/50:hover {
+    box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.3), 0 4px 6px -2px rgba(197, 160, 89, 0.2);
+  }
+}
