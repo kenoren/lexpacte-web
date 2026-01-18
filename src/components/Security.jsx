@@ -30,10 +30,10 @@ const Security = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/20 rounded-full mb-4">
             <Shield className="w-8 h-8 text-gold" />
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue dark:text-white transition-colors duration-300">
             Sécurité de <span className="text-gold">classe entreprise</span>
           </h2>
-          <p className="text-xl text-navy-blue opacity-90">
+          <p className="text-xl text-navy-blue dark:text-gray-300 opacity-90 transition-colors duration-300">
             Nous prenons la sécurité de vos données au sérieux, avec des standards bancaires
           </p>
         </div>
@@ -45,7 +45,7 @@ const Security = () => {
             return (
               <div
                 key={index}
-                className="group relative bg-white border-2 border-gold/20 rounded-lg p-8 hover:border-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold/10"
+                className="group relative bg-white dark:bg-navy/30 border-2 border-gold/20 dark:border-gold/30 rounded-lg p-8 hover:border-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold/10"
               >
                 {/* Content */}
                 <div className="space-y-6">
@@ -57,10 +57,10 @@ const Security = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-navy-blue group-hover:text-gold transition-colors">
+                    <h3 className="text-2xl font-bold text-navy-blue dark:text-white group-hover:text-gold transition-colors">
                       {feature.title}
                     </h3>
-                    <p className="text-navy-blue leading-relaxed opacity-90">
+                    <p className="text-navy-blue dark:text-gray-300 leading-relaxed opacity-90 transition-colors duration-300">
                       {feature.description}
                     </p>
                     <div className="pt-2">
@@ -77,17 +77,17 @@ const Security = () => {
 
         {/* Additional Security Badges */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
-          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
-            <span className="text-sm text-navy-blue font-medium">RGPD</span>
+          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
+            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">RGPD</span>
           </div>
-          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
-            <span className="text-sm text-navy-blue font-medium">ISO 27001</span>
+          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
+            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">ISO 27001</span>
           </div>
-          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
-            <span className="text-sm text-navy-blue font-medium">HDS Certified</span>
+          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
+            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">HDS Certified</span>
           </div>
-          <div className="px-4 py-2 bg-white border border-gold/20 rounded-md">
-            <span className="text-sm text-navy-blue font-medium">SOC 2 Type II</span>
+          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
+            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">SOC 2 Type II</span>
           </div>
         </div>
       </div>

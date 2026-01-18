@@ -28,10 +28,10 @@ const FAQ = () => {
       <div className="space-y-12">
         {/* Section Header */}
         <div className="text-center space-y-4">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue dark:text-white transition-colors duration-300">
             Questions <span className="text-gold">fréquentes</span>
           </h2>
-          <p className="text-xl text-navy-blue opacity-90">
+          <p className="text-xl text-navy-blue dark:text-gray-300 opacity-90 transition-colors duration-300">
             Tout ce que vous devez savoir sur Lexpacte.ai
           </p>
         </div>
@@ -41,13 +41,13 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border-2 border-gold/20 rounded-lg overflow-hidden hover:border-gold/40 transition-all duration-300"
+              className="bg-white dark:bg-navy/30 border-2 border-gold/20 dark:border-gold/30 rounded-lg overflow-hidden hover:border-gold/40 transition-all duration-300"
             >
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left group"
               >
-                <span className="text-lg font-semibold text-navy-blue group-hover:text-gold transition-colors pr-4">
+                <span className="text-lg font-semibold text-navy-blue dark:text-white group-hover:text-gold transition-colors pr-4">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -62,7 +62,7 @@ const FAQ = () => {
                 }`}
               >
                 <div className="px-6 pb-5">
-                  <p className="text-navy-blue opacity-90 leading-relaxed">
+                  <p className="text-navy-blue dark:text-gray-300 opacity-90 leading-relaxed transition-colors duration-300">
                     {faq.answer}
                   </p>
                 </div>

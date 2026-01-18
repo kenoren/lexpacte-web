@@ -1,15 +1,18 @@
 import { Linkedin } from 'lucide-react'
+import { useTheme } from '../contexts/ThemeContext'
 
 const Footer = () => {
+  const { theme } = useTheme()
+
   return (
-    <footer className="bg-[#050B1A] text-white">
+    <footer className="bg-[#0C2A4D] dark:bg-[#0C2A4D] text-white border-t border-gold/10 dark:border-gold/20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 items-start">
           {/* Logo and Slogan */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/logo.jpeg" 
+                src={theme === 'dark' ? "/logo-sombre.webp" : "/logo-sombre.webp"} 
                 alt="Lexpacte.ai Logo" 
                 className="h-10 w-auto"
               />
@@ -37,7 +40,7 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href="https://linkedin.com/company/lexpacte"
+                href="https://www.linkedin.com/in/mathis-fourey-7348b0198/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-gray-300 hover:text-gold transition-colors duration-200 text-sm"

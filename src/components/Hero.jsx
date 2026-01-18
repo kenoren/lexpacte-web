@@ -7,10 +7,10 @@ const Hero = () => {
         {/* Text Content */}
         <div className="space-y-8">
           <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-blue leading-tight text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-blue dark:text-white leading-tight text-balance transition-colors duration-300">
               L'Intelligence Artificielle au service du <span className="text-gold">M&A</span>
             </h1>
-            <p className="text-xl text-navy-blue leading-relaxed max-w-2xl opacity-90">
+            <p className="text-xl text-navy-blue dark:text-gray-300 leading-relaxed max-w-2xl opacity-90 transition-colors duration-300">
               Sécurisez vos due diligence. Analysez vos contrats et générez vos rapports de synthèse en quelques secondes. 
               <span className="text-gold font-medium"> Conçu pour l'excellence juridique.</span>
             </p>

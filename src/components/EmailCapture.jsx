@@ -59,7 +59,7 @@ const EmailCapture = () => {
 
   return (
     <section id="email-capture" className="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto scroll-mt-20">
-      <div className="relative bg-gradient-to-br from-gold/10 via-white to-turquoise/10 border-2 border-gold/20 rounded-2xl p-8 md:p-12 shadow-xl">
+      <div className="relative bg-gradient-to-br from-gold/10 via-white dark:via-navy/30 to-turquoise/10 border-2 border-gold/20 dark:border-gold/30 rounded-2xl p-8 md:p-12 shadow-xl transition-colors duration-300">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-turquoise/10 rounded-full blur-3xl -z-10"></div>
         <div className="absolute bottom-0 left-0 w-40 h-40 bg-gold/10 rounded-full blur-3xl -z-10"></div>
@@ -72,10 +72,10 @@ const EmailCapture = () => {
 
           {/* Title and description */}
           <div className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-navy-blue">
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy-blue dark:text-white transition-colors duration-300">
               Rejoignez la liste d'attente pour la <span className="text-gold">bêta privée</span>
             </h2>
-            <p className="text-lg text-navy-blue opacity-90 max-w-2xl mx-auto">
+            <p className="text-lg text-navy-blue dark:text-gray-300 opacity-90 max-w-2xl mx-auto transition-colors duration-300">
               Soyez parmi les premiers à découvrir Lexpacte.ai et bénéficiez d'un accès prioritaire avec des fonctionnalités exclusives.
             </p>
           </div>
@@ -105,7 +105,7 @@ const EmailCapture = () => {
                   }}
                   placeholder="votre.email@cabinet-avocat.fr"
                   required
-                  className="w-full px-6 py-4 bg-white border-2 border-gold/20 rounded-lg text-navy-blue placeholder-gray-400 focus:outline-none focus:border-gold transition-colors"
+                  className="w-full px-6 py-4 bg-white dark:bg-navy/50 border-2 border-gold/20 dark:border-gold/30 rounded-lg text-navy-blue dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gold transition-colors"
                 />
                 {error && (
                   <p className="mt-2 text-sm text-red-600 text-left">{error}</p>
@@ -122,7 +122,7 @@ const EmailCapture = () => {
           )}
 
           {/* Privacy note */}
-          <p className="text-sm text-navy-blue opacity-75">
+          <p className="text-sm text-navy-blue dark:text-gray-400 opacity-75 transition-colors duration-300">
             Nous respectons votre vie privée. Aucun spam, désinscription à tout moment.
           </p>
         </div>

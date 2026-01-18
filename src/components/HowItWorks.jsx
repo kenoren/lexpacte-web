@@ -26,14 +26,14 @@ const HowItWorks = () => {
   ]
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-b from-white to-gray-50/50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gradient-to-b from-white to-gray-50/50 dark:from-navy/20 dark:to-navy/40 transition-colors duration-300">
       <div className="space-y-16">
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-blue dark:text-white transition-colors duration-300">
             Comment ça <span className="text-gold">fonctionne</span>
           </h2>
-          <p className="text-xl text-navy-blue opacity-90">
+          <p className="text-xl text-navy-blue dark:text-gray-300 opacity-90 transition-colors duration-300">
             Un processus simple et sécurisé en trois étapes
           </p>
         </div>
@@ -49,7 +49,7 @@ const HowItWorks = () => {
                   {step.number}
                 </div>
 
-                <div className="group relative bg-white border border-gold/20 rounded-lg p-8 h-full hover:border-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold/10">
+                <div className="group relative bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-lg p-8 h-full hover:border-gold/40 transition-all duration-300 hover:shadow-2xl hover:shadow-gold/10">
                   {/* Gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${step.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg`}></div>
                   
@@ -60,10 +60,10 @@ const HowItWorks = () => {
                     </div>
                     
                     <div className="space-y-3">
-                      <h3 className="text-2xl font-bold text-navy-blue group-hover:text-gold transition-colors">
+                      <h3 className="text-2xl font-bold text-navy-blue dark:text-white group-hover:text-gold transition-colors">
                         {step.title}
                       </h3>
-                      <p className="text-navy-blue leading-relaxed opacity-90">
+                      <p className="text-navy-blue dark:text-gray-300 leading-relaxed opacity-90 transition-colors duration-300">
                         {step.description}
                       </p>
                     </div>
