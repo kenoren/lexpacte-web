@@ -18,7 +18,7 @@ const Security = () => {
       icon: Server,
       title: 'Hébergement souverain en France',
       description: 'Toutes nos infrastructures sont hébergées en France, garantissant la souveraineté des données et la conformité avec le RGPD et les exigences des cabinets d\'avocats.',
-      technical: 'RGPD compliant, ISO 27001'
+      technical: 'RGPD Compliant'
     }
   ]
 
@@ -75,19 +75,48 @@ const Security = () => {
           })}
         </div>
 
-        {/* Additional Security Badges */}
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-8">
-          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
-            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">RGPD</span>
+        {/* Engagements de sécurité réels */}
+        <div className="grid md:grid-cols-3 gap-6 pt-10">
+          <div className="flex items-start gap-4">
+            <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-gold/20">
+              <Lock className="h-6 w-6 text-gold" />
+            </div>
+            <div className="space-y-1.5">
+              <h3 className="text-base font-semibold text-navy-blue dark:text-white">
+                Protection des données
+              </h3>
+              <p className="text-sm text-navy-blue dark:text-gray-300">
+                Vos documents sont analysés en mémoire vive et ne sont jamais stockés de façon permanente.
+              </p>
+            </div>
           </div>
-          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
-            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">ISO 27001</span>
+
+          <div className="flex items-start gap-4">
+            <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-gold/20">
+              <Server className="h-6 w-6 text-gold" />
+            </div>
+            <div className="space-y-1.5">
+              <h3 className="text-base font-semibold text-navy-blue dark:text-white">
+                IA souveraine
+              </h3>
+              <p className="text-sm text-navy-blue dark:text-gray-300">
+                Traitement assuré par Mistral AI, garantissant qu&apos;aucune donnée n&apos;est utilisée pour l&apos;entraînement des modèles.
+              </p>
+            </div>
           </div>
-          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
-            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">HDS Certified</span>
-          </div>
-          <div className="px-4 py-2 bg-white dark:bg-navy/30 border border-gold/20 dark:border-gold/30 rounded-md transition-colors duration-300">
-            <span className="text-sm text-navy-blue dark:text-gray-200 font-medium">SOC 2 Type II</span>
+
+          <div className="flex items-start gap-4">
+            <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-gold/20">
+              <Shield className="h-6 w-6 text-gold" />
+            </div>
+            <div className="space-y-1.5">
+              <h3 className="text-base font-semibold text-navy-blue dark:text-white">
+                Conformité RGPD
+              </h3>
+              <p className="text-sm text-navy-blue dark:text-gray-300">
+                Plateforme conçue dans le respect du RGPD pour garantir la confidentialité de vos échanges.
+              </p>
+            </div>
           </div>
         </div>
       </div>
