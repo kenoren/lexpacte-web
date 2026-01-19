@@ -5,8 +5,8 @@ const Security = () => {
     {
       icon: Lock,
       title: 'Chiffrement de bout en bout',
-      description: 'Toutes vos données sont chiffrées avec AES-256, le standard de l\'industrie. Les transmissions utilisent TLS 1.3 pour garantir une sécurité maximale.',
-      technical: 'AES-256, TLS 1.3'
+      description: 'Toutes vos données sont chiffrées avec AES-256, le standard de l\'industrie.',
+      technical: 'AES-256'
     },
     {
       icon: Shield,
