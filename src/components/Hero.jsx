@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="relative">
           <div className="bg-gradient-to-br from-gold/10 to-turquoise/10 rounded-lg p-2 border border-gold/20 backdrop-blur-sm shadow-xl">
             <img 
-              src="/unnamed.jpg" 
+              src="/unnamed.png"
               alt="Interface de démonstration Lexpacte.ai - Analyse en temps réel des contrats" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
